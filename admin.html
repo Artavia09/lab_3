@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administración | Cine Rosyall CR</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>⚙️ Administración de Cartelera</h1>
+    <nav class="nav">
+      <a class="btn" href="./index.html">Ver Cartelera</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="form-pelicula" class="card form">
+      <div class="row">
+        <label for="titulo">Nombre de película</label>
+        <input id="titulo" name="titulo" type="text" required maxlength="120" placeholder="Ej: Coco">
+      </div>
+
+      <div class="row">
+        <label for="anio">Año de película</label>
+        <input id="anio" name="anio" type="number" inputmode="numeric" min="1888" max="2100" required placeholder="Ej: 2017">
+      </div>
+
+      <div class="row">
+        <label for="genero">Género de película</label>
+        <select id="genero" name="genero" required>
+          <option value="">Seleccionar…</option>
+          <option value="comedia">Comedia</option>
+          <option value="drama">Drama</option>
+          <option value="familiar">Familiar</option>
+          <option value="terror">Terror</option>
+          <option value="romance">Romance</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="poster">URL del póster</label>
+        <input id="poster" name="poster" type="url" required placeholder="https://.../poster.jpg">
+      </div>
+
+      <div class="row actions">
+        <button id="btn-guardar" class="btn primary" type="submit">Añadir película</button>
+        <button id="btn-limpiar" class="btn" type="reset">Limpiar</button>
+      </div>
+
+      <div id="mensaje" class="estado" aria-live="polite"></div>
+    </form>
+
+    <aside class="preview card">
+      <h2>Vista previa</h2>
+      <div id="preview-tarjeta" class="tarjeta">
+        <div class="poster-skeleton"></div>
+        <div class="info">
+          <h3>(Título)</h3>
+          <p class="meta"><span>(Género)</span> • <span>(Año)</span></p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    <small> ROSYALL• Cine Lab</small>
+  </footer>
+
+  <script type="module" src="./src/admin.js"></script>
+</body>
+</html>

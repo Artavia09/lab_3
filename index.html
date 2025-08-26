@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartelera | Cine Rosyall CR</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>🎬 Cartelera</h1>
+    <nav class="nav">
+      <a class="btn" href="./admin.html">Administración</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <label>
+        Buscar:
+        <input id="buscar" type="search" placeholder="Título...">
+      </label>
+      <label>
+        Género:
+        <select id="filtro-genero">
+          <option value="">Todos</option>
+          <option value="comedia">Comedia</option>
+          <option value="drama">Drama</option>
+          <option value="familiar">Familiar</option>
+          <option value="terror">Terror</option>
+          <option value="romance">Romance</option>
+        </select>
+      </label>
+      <button id="refrescar" class="btn">Refrescar</button>
+    </section>
+
+    <section id="estado" class="estado" aria-live="polite"></section>
+
+    <section id="grid-peliculas" class="grid"></section>
+  </main>
+
+  <footer class="app-footer">
+    <small> ROSYALL • Cine Lab</small>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

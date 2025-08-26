@@ -1,0 +1,18 @@
+{
+  "peliculas": [
+    {
+      "titulo": "coco",
+      "poster": "https://m.media-amazon.com/images/I/71dN0ekpUqL._UF894,1000_QL80_.jpg",
+      "genero": "familiar",
+      "anio_lanzamiento": 2017,
+      "id": 1
+    },
+    {
+      "titulo": "avengers",
+      "poster": "https://i.redd.it/b8a68egs9n2f1.jpeg",
+      "genero": "familiar",
+      "anio_lanzamiento": 2026,
+      "id": 2
+    }
+  ]
+}

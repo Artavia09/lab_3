@@ -1,0 +1,13 @@
+{
+  "name": "cine-forward-cr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "api": "json-server --watch db.json --port 3000 --delay 250",
+    "web": "serve -l 5173 ."
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "serve": "^14.2.4"
+  }
+}
